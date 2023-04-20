@@ -1,4 +1,4 @@
-export class newNota{
+export class newnote{
     name: string
     description: string
 }

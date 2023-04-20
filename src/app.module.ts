@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { NotasModule } from './notas/notas.module';
+import { notesModule } from './notes/note.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { dirname } from 'path';
 
@@ -16,7 +16,7 @@ import { dirname } from 'path';
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
     synchronize: true
     
-  }),NotasModule],
+  }),notesModule],
   controllers: [AppController],
   providers: [AppService],
 })
